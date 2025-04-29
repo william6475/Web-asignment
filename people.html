@@ -1,0 +1,50 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <meta name="viewpoint" content="width=device-width, initial-scale=1, maximum-scale=1.0, user-scalable=no"><!--Prevents webcontent being shrunk to fit smaller screens-->
+        <meta charset="utf-8"/><!--Sets the charecterset to utf-8-->
+        <meta name=" description" content= "Members of TV show crew" >
+        <title>People - Sheppard TV catalogue</title>
+        
+        <link rel="stylesheet" href="./css/styles.css"/><!--connects to style.css-->
+        <script src="https://kit.fontawesome.com/407fb50441.js" crossorigin="anonymous"></script><!--links to the font awsome kit(for icons)-->
+        <link 
+        href="https://cdn.jsdelivr.net/npm/bootstrap@5.2.0/dist/css/bootstrap.min.css"
+        rel="stylesheet"><!--imports bootstrap-->
+    </head>
+    <body class="body" id="people-search">
+        <nav class="navbar navbar-expand backgroundblue"><!--creates a navigational bar-->
+            <a class="navbar-brand importantwhite" href="index.html">Sheppard TV catalogue</a>
+            <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNAV" aria-controls="navbarNAV" aria-expanded="false" aria-label="Toggle navigation"><!--makes the navbar responsive for mobile users-->
+                <span class="navbar-toggle-icon"></span>
+            </button>
+            <div class="collapse navbar-collapse"><!--creates unordered list for navbar links-->
+                <ul class="navbar-nav">
+                    <li class="nav-item">
+                        <a class="nav-link importantwhite" href="index.html"><i class="fa-solid fa-house"></i>Home</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link importantwhite" href="shows.html"><i class="fa-solid fa-tv"></i>TV shows</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link importantwhite" href="people.html"><i class="fa-solid fa-person"></i>People</a>
+                    </li>
+                </ul>
+            </div>
+        </nav>
+        <ol class="breadcrumb backgroundblue"><!--Creates a breadcrumb bar-->
+            <li class="breadcrumb-item active"><a href="index.html" class="coloryellow">Home</a></li>
+            <li class="breadcrumb-item active"><a href="people.html" class="coloryellow">Person search</a></li>
+        </ol>
+        <div class="container">
+            <h1 class="colorred underline">Person search</h1>
+            <p class="bold searchbarlabel">Search for a person show to get started!</p>
+            <form class="formone"><!--Creates the searchbar-->
+                <div class="row topspaceone">
+                    <input type="text" name="fullname" /><!--Takes text input from the user-->
+                </div>
+            </form>
+        </div>
+        <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.2.0/dist/js/bootstrap.bundle.min.js"></script><!--imports bootstrap for javascript-->
+    </body>
+</html>

@@ -1,0 +1,105 @@
+/*_________________________________________________________________________________________*/
+/*TEXT COLORS*/
+.coloryellow{color:#FFC000;}
+
+.colorred{color:#800020;}
+
+.colorwhite{color:white;}
+
+.colorblack{color:black;}
+
+/*_________________________________________________________________________________________*/
+/*BACKGROUND COLORS*/
+.backgroundblue{background-color:#0818A8}
+
+.body{background-color: #FFFFF0;}/*sets the background color*/
+
+/*_________________________________________________________________________________________*/
+/*Miscelanious classes*/
+.bold{font-weight: 500;}
+
+.textaligncenter{text-align: center;}
+
+.textalignleft{text-align: left;}
+
+.notextdecoration{text-decoration: none;}
+
+.underline{text-decoration: underline;}
+
+/*_________________________________________________________________________________________*/
+/*Specific use / misceelanious IDs*/
+.navbar{height: 1.25em;}
+
+.searchbarlabel{
+  padding-top: 0.9375em;
+  margin-bottom: -10px;
+}
+
+.topspaceone{padding-top: 1.25em;}
+.formone{/*form style one*/
+  padding-left: 0.625;
+}
+
+.imgone{
+  width: 22em;
+  height:auto;
+  padding-top: 2.1em;
+}
+
+.textone{/*Text style one*/
+  font-size:1.875em;
+  padding-left: 2em;
+  padding-top: 0.9em;
+}
+
+.texttwo{/*Text style two*/
+  padding-left: 5.4em;
+  padding-top: 0.6em;
+}
+
+.textthree{/*Text style three*/
+  font-size:1.875em;
+  padding-top: 0.9em;
+  padding-right:4.4em;
+}
+
+.textfour{/*Text style four*/
+  font-size:1.875em;
+  padding-top: 0.9em;
+}
+
+.textfive{/*Text style five*/
+    font-size:1.875em;
+    padding-left: 5em;
+    padding-top: 0.9em;
+}
+
+.summaryone{/*is the same as text five*/
+  font-size:1.875em;
+  padding-top: 0.9em;
+  padding-right:4.4em;
+  margin-bottom: -10px;
+}
+
+.summarytwo{/*is the same as text four*/
+  font-size:1.875em;
+  padding-top: 0.9em;
+  margin-bottom: -10px;
+}
+
+.jumbotronone {/*Formats an image for the home-page jumbotron*/
+  Background-image: url('../images/home_jumbotron.jpg');
+  background-repeat: no-repeat;
+  background-position: center center;
+  background-size: cover;
+  color: #FFF;
+}
+
+.importantwhite{/*First text link style*/
+  color: 	white !important;
+}
+.breadcrumb{/*Sets the color of the breadcrumb bar*/
+  margin-bottom: 0 !important;
+  height: 1.5625em !important;
+  background-color:#0818A8 !important;
+}
