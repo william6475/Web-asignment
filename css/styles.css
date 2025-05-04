@@ -8,6 +8,8 @@
 
 .colorblack{color:black;}
 
+.colorblue{color:#0818A8;}
+
 /*_________________________________________________________________________________________*/
 /*BACKGROUND COLORS*/
 .backgroundblue{background-color:#0818A8}
@@ -25,6 +27,10 @@
 .notextdecoration{text-decoration: none;}
 
 .underline{text-decoration: underline;}
+
+.stylessList{
+  list-style-type: none;  
+}
 
 /*_________________________________________________________________________________________*/
 /*Specific use / misceelanious IDs*/

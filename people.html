@@ -38,13 +38,16 @@
         </ol>
         <div class="container">
             <h1 class="colorred underline">Person search</h1>
-            <p class="bold searchbarlabel">Search for a person show to get started!</p>
+            <p class="bold searchbarlabel">Search for a person to get started!</p>
             <form class="formone"><!--Creates the searchbar-->
                 <div class="row topspaceone">
                     <input type="text" name="fullname" /><!--Takes text input from the user-->
                 </div>
             </form>
         </div>
+        <div class="container">
+            <ul id="personResults" class="mt-4 colorblue"></ul><!--used to link this file to the JS file-->
+        </div>
         <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.2.0/dist/js/bootstrap.bundle.min.js"></script><!--imports bootstrap for javascript-->
-    </body>
+        <script src="./js/people.js"></script>
 </html>

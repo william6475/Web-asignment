@@ -41,14 +41,19 @@
         <div class="container">
             <h1 class="colorred underline">Show information</h1>
             <div class="row text-center">
-                <div class="col-lg-4"><!--Creates the webpage menu table-->
-                    <img src="./images/placeholder.webp" class="imgone" alt="Image of show">
-                </div>
                 <div class="col-lg-4">
-                    <p class="colorred bold textfive textalignleft">Show name<br>language<br>Genres<br>rating<br>Average runtime<br>premiered<br>ended<br>official site</p>
+                    <ul id="showImage" class="stylessList">
+                    </ul>
+                </div>
+                <div class="col-lg-8">
+                    <ul id="showInfo" class="colorred bold textfive textalignleft"></ul>
                 </div>
             </div>
         </div>
+        <div class="container">
+            <ul id="episodes" class="colorred bold textfive textalignleft"></ul>
+        </div>
         <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.2.0/dist/js/bootstrap.bundle.min.js"></script><!--imports bootstrap for javascript-->
+        <script src="./js/show.js"></script>
     </body>
 </html>

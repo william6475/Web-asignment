@@ -42,27 +42,29 @@
             <h1 class="colorred underline">Personal profile</h1>
             <div class="row text-center">
                 <div class="col-lg-4"><!--Creates the webpage menu table-->
-                    <img src="./images/placeholder.webp" class="imgone" alt="Image of person">
+                    <ul id="personImage" class="stylessList">
+                    </ul>
                 </div>
-                <div class="col-lg-4">
-                    <p class="colorred bold textfive textalignleft">Name<br>Country<br>Birthday<br>Deathday<br>Gender</p>
+                <div class="col-lg-8">
+                    <ul id="personInfo" class="colorred bold textfive textalignleft"></ul>
                 </div>
             </div>
             <div class="row text-center">
-                <div class="col-lg-4"><!--Creates the webpage menu table-->
+                <div class="col-lg-4">
                     <details aria-expanded="false" aria-controls="castcredits">
                         <summary class="coloryellow bold summaryone">Cast credits:</summary>
-                        <p class="colorred bold textthree">Show<br>Charecter<br>Show<br>Charecter<br>Show<br>Charecter<br>Show<br>Charecter</p>
+                        <ul id="castCredits" class="colorred bold textthree"></ul>
                     </details>
                 </div>
                 <div class="col-lg-4">
                     <details aria-expanded="false" aria-controls="crewcredits">
                         <summary class="coloryellow bold summarytwo">Crew credits:</summary>
-                        <p class="colorred bold textfour">Show<br>Role<br>Show<br>Role<br>Show<br>Role<br>Show<br>Role</p>
+                        <ul id="crewCredits" class="colorred bold textfour"></ul>
                       </details>
                 </div>
             </div>
         </div>
         <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.2.0/dist/js/bootstrap.bundle.min.js"></script><!--imports bootstrap for javascript-->
+        <script src="./js/person.js"></script>
     </body>
 </html>
