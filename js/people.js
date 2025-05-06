@@ -5,7 +5,7 @@ fetch(url + query)
 .then((person) => person.json())//convert the results to an object
 .then(function(data) {
     data.forEach(function (value) {
-        resultList.insertAdjacentHTML('beforeend', '<li><a href="person.html?personID=' + value.person.id + '"class="coloryellow">' + value.person.name + '</li>');
+        resultList.insertAdjacentHTML('beforeend', '<li class="minFontSize"><a href="person.html?personID=' + value.person.id + '"class="coloryellow">' + value.person.name + '</li>');
         });//go through the data and make each show and score into an object 
     });
 const resultList = document.querySelector('#personResults');

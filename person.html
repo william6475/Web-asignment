@@ -11,38 +11,44 @@
         <link 
         href="https://cdn.jsdelivr.net/npm/bootstrap@5.2.0/dist/css/bootstrap.min.css"
         rel="stylesheet"><!--imports bootstrap-->
+
+        <link rel="preconnect" href="https://fonts.googleapis.com"><!--links to google fonts-->
+        <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+        <link href="https://fonts.googleapis.com/css2?family=Lato:ital,wght@0,100;0,300;0,400;0,700;0,900;1,100;1,300;1,400;1,700;1,900&family=Roboto:ital,wght@0,100..900;1,100..900&display=swap" rel="stylesheet"><!--Links to the fonts-->
     </head>
     <body class="body" id="person">
         <nav class="navbar navbar-expand backgroundblue"><!--creates a navigational bar-->
-            <a class="navbar-brand importantwhite" href="index.html">Sheppard TV catalogue</a>
+            <a class="navbar-brand importantwhite minFontSize lato-regular" href="index.html">Sheppard TV catalogue</a>
             <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNAV" aria-controls="navbarNAV" aria-expanded="false" aria-label="Toggle navigation"><!--makes the navbar responsive for mobile users-->
                 <span class="navbar-toggle-icon"></span>
             </button>
             <div class="collapse navbar-collapse"><!--creates unordered list for navbar links-->
                 <ul class="navbar-nav">
                     <li class="nav-item">
-                        <a class="nav-link importantwhite" href="index.html"><i class="fa-solid fa-house"></i>Home</a>
+                        <a class="nav-link importantwhite minFontSize roboto-regular" href="index.html"><i class="fa-solid fa-house"></i>Home</a>
                     </li>
                     <li class="nav-item">
-                        <a class="nav-link importantwhite" href="shows.html"><i class="fa-solid fa-tv"></i>TV shows</a>
+                        <a class="nav-link importantwhite minFontSize roboto-regular" href="shows.html"><i class="fa-solid fa-tv"></i>TV shows</a>
                     </li>
                     <li class="nav-item">
-                        <a class="nav-link importantwhite" href="people.html"><i class="fa-solid fa-person"></i>People</a>
+                        <a class="nav-link importantwhite minFontSize roboto-regular" href="people.html"><i class="fa-solid fa-person"></i>People</a>
                     </li>
                 </ul>
             </div>
         </nav>
-        <ol class="breadcrumb backgroundblue"><!--Creates a breadcrumb bar-->
-            <li class="breadcrumb-item active"><a href="index.html" class="coloryellow">Home</a></li>
-            <li class="breadcrumb-item active"><a href="people.html" class="coloryellow">Person search</a></li>
-            <li class="breadcrumb-item active"><a href="person.html" class="coloryellow">Person</a></li>
-        </ol>
+        <nav>
+            <ol class="breadcrumb backgroundblue"><!--Creates a breadcrumb bar-->
+                <li class="breadcrumb-item active minFontSize roboto-regular"><a href="index.html" class="coloryellow">Home</a></li>
+                <li class="breadcrumb-item active minFontSize roboto-regular"><a href="people.html" class="coloryellow">Person search</a></li>
+                <li class="breadcrumb-item active minFontSize roboto-regular"><a href="person.html" class="coloryellow">Person</a></li>
+            </ol>
+        </nav>
 
         <div class="container">
-            <h1 class="colorred underline">Personal profile</h1>
+            <h1 class="colorred underline minFontSizeH1 roboto-regular">Personal profile</h1>
             <div class="row text-center">
-                <div class="col-lg-4"><!--Creates the webpage menu table-->
-                    <ul id="personImage" class="stylessList">
+                <div class="col-lg-4">
+                    <ul id="personImage" class="stylessList"><!--person.js sends the person's image to this-->
                     </ul>
                 </div>
                 <div class="col-lg-8">
@@ -52,14 +58,14 @@
             <div class="row text-center">
                 <div class="col-lg-4">
                     <details aria-expanded="false" aria-controls="castcredits">
-                        <summary class="coloryellow bold summaryone">Cast credits:</summary>
-                        <ul id="castCredits" class="colorred bold textthree"></ul>
+                        <summary class="coloryellow bold summaryone minFontSize roboto-regular">Cast credits:</summary>
+                        <ul id="castCredits" class="colorred bold textthree"></ul><!--person.js sends the cast credits to this-->
                     </details>
                 </div>
                 <div class="col-lg-4">
                     <details aria-expanded="false" aria-controls="crewcredits">
-                        <summary class="coloryellow bold summarytwo">Crew credits:</summary>
-                        <ul id="crewCredits" class="colorred bold textfour"></ul>
+                        <summary class="coloryellow bold summarytwo minFontSize roboto-regular">Crew credits:</summary>
+                        <ul id="crewCredits" class="colorred bold textfour"></ul><!--person.js sends the crew credits to this-->
                       </details>
                 </div>
             </div>

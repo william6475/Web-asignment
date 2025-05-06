@@ -5,7 +5,7 @@ fetch(url + query)
 .then((show) => show.json())//convert the results to an object
 .then(function(data) {
     data.forEach(function (value) {
-        resultList.insertAdjacentHTML('beforeend', '<li><a href="show.html?showName=' + value.show.name + '"class="coloryellow">' + value.show.name + '</li>');//send relevant info back to shows
+        resultList.insertAdjacentHTML('beforeend', '<li class="minFontSize"><a href="show.html?showName=' + value.show.name + '"class="coloryellow">' + value.show.name + '</li>');//send relevant info back to shows
         });//Return the shows in the form of html list items to shows.html
     });
 const resultList = document.querySelector('#showResults');

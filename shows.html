@@ -11,34 +11,40 @@
         <link 
         href="https://cdn.jsdelivr.net/npm/bootstrap@5.2.0/dist/css/bootstrap.min.css"
         rel="stylesheet"><!--imports bootstrap-->
+
+        <link rel="preconnect" href="https://fonts.googleapis.com"><!--links to google fonts-->
+        <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+        <link href="https://fonts.googleapis.com/css2?family=Lato:ital,wght@0,100;0,300;0,400;0,700;0,900;1,100;1,300;1,400;1,700;1,900&family=Roboto:ital,wght@0,100..900;1,100..900&display=swap" rel="stylesheet"><!--Links to the fonts-->
     </head>
     <body class="body" id="show-search">
         <nav class="navbar navbar-expand backgroundblue"><!--creates a navigational bar-->
-            <a class="navbar-brand importantwhite" href="index.html">Sheppard TV catalogue</a>
+            <a class="navbar-brand importantwhite minFontSize lato-regular" href="index.html">Sheppard TV catalogue</a>
             <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNAV" aria-controls="navbarNAV" aria-expanded="false" aria-label="Toggle navigation"><!--makes the navbar responsive for mobile users-->
                 <span class="navbar-toggle-icon"></span>
             </button>
             <div class="collapse navbar-collapse"><!--creates unordered list for navbar links-->
                 <ul class="navbar-nav">
                     <li class="nav-item">
-                        <a class="nav-link importantwhite" href="index.html"><i class="fa-solid fa-house"></i>Home</a>
+                        <a class="nav-link importantwhite minFontSize roboto-regular" href="index.html"><i class="fa-solid fa-house"></i>Home</a>
                     </li>
                     <li class="nav-item">
-                        <a class="nav-link importantwhite" href="shows.html"><i class="fa-solid fa-tv"></i>TV shows</a>
+                        <a class="nav-link importantwhite minFontSize roboto-regular" href="shows.html"><i class="fa-solid fa-tv"></i>TV shows</a>
                     </li>
                     <li class="nav-item">
-                        <a class="nav-link importantwhite" href="people.html"><i class="fa-solid fa-person"></i>People</a>
+                        <a class="nav-link importantwhite minFontSize roboto-regular" href="people.html"><i class="fa-solid fa-person"></i>People</a>
                     </li>
                 </ul>
             </div>
         </nav>
-        <ol class="breadcrumb backgroundblue"><!--Creates a breadcrumb bar-->
-            <li class="breadcrumb-item active"><a href="index.html" class="coloryellow">Home</a></li>
-            <li class="breadcrumb-item active"><a href="shows.html" class="coloryellow">Show search</a></li>
-        </ol>
+        <nav>
+            <ol class="breadcrumb backgroundblue"><!--Creates a breadcrumb bar-->
+                <li class="breadcrumb-item active"><a href="index.html" class="coloryellow minFontSize roboto-regular">Home</a></li>
+                <li class="breadcrumb-item active"><a href="shows.html" class="coloryellow minFontSize roboto-regular">Show search</a></li>
+            </ol>
+        </nav>
         <div class="container">
-            <h1 class="colorred underline">TV show search</h1>
-            <p class="bold searchbarlabel">Search for a TV show to get started!</p>
+            <h1 class="colorred underline minFontSizeH1 roboto-regular">TV show search</h1>
+            <p class="bold searchbarlabel minFontSize roboto-regular">Search for a TV show to get started!</p>
             <form class="formone"><!--Creates the searchbar-->
                 <div class="row topspaceone">
                 <input type="text" name="showName" /><!--Takes text input from the user-->
@@ -46,7 +52,7 @@
             </form>
         </div>
         <div class="container">
-            <ul id="showResults" class="mt-4 colorblue"></ul><!--used to link this file to the JS file-->
+            <ul id="showResults" class="mt-4 colorblue"></ul><!--shows.js sends showname weblinks in the form of list elements to this list-->
         </div>
         <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.2.0/dist/js/bootstrap.bundle.min.js"></script><!--imports bootstrap for javascript-->
         <script src="./js/shows.js"></script>
