@@ -1,0 +1,57 @@
+.bootCard{
+    width: 100%;
+    height: 100%;
+    overflow-y: hidden;
+    white-space: nowrap;
+  }
+  
+  .noIMGBootCard{padding-bottom: 155%;}
+
+.bootCard{
+  div{
+    p{ 
+  --max-lines: 1;
+  overflow: hidden;
+  }
+  } 
+}/*Styles bootcard paragraph elements*/
+
+.bootCard{
+  div:has(input[type="checkbox"]:checked){
+    p{ 
+        --max-lines: 15;
+  }
+  } 
+}/*Expands bootcard text if the expand text checkbox is ticked*/
+
+.bootCard{
+  div:has(input[type="checkbox"]:checked){
+    h5{ 
+        --max-lines: 3;
+  }
+  } 
+}/*expands the bootcard title if the expand text checkbox is ticked*/
+
+.bootCard:has(input[type="checkbox"]:checked){
+    width: 100%;
+    height: 100%;
+    overflow-y: visible;
+    white-space: normal;
+  }/*Styles the bootcards when the expand text checkbox is ticked*/
+
+  .expandTextChk{
+  appearance: none;
+  border: 0.1em solid black;
+  padding: 0.5em;
+  border-radius: .25em;
+  cursor: pointer;  
+  margin-left: 0.3em;
+}
+
+.expandTextChk::before{
+  content: "Expand text";
+}
+
+.expandTextChk:checked::before{
+  content: "Collapse";
+}

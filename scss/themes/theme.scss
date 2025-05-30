@@ -1,0 +1,83 @@
+//_________________________________________________________________________________________
+//TEXT COLORS
+.colorred{color:#800020;}
+
+.coloryellow{color:#FFC000;}
+
+.colorwhite{color:white;}
+
+.importantwhite{color: 	white !important;}
+
+.colorblack{color:black;}
+
+.colorblue{color:#0818A8;}
+
+//_________________________________________________________________________________________
+//BACKGROUND COLORS
+.backgroundblue{background-color:#0818A8}
+
+//_________________________________________________________________________________________
+//Fonts
+.lato-regular {
+    font-family: "Lato", sans-serif;
+    font-weight: 400;
+    font-style: normal;
+  }
+  .roboto-regular {
+    font-family: "Roboto", sans-serif;
+    font-optical-sizing: auto;
+    font-weight: 400;
+    font-style: normal;
+    font-variation-settings:
+      "wdth" 100;
+  }
+
+//_________________________________________________________________________________________
+//Font sizes
+.minFontSize{
+  font-size: max(1em, 13px);
+}
+.minFontSizeH1{
+  font-size: max(2.5em, 13px);
+}
+.minFontSizeH2{
+  font-size: max(2em, 13px);
+}
+
+.minFontSizeLogo{
+  font-size: max(1.25em, 13px);
+}
+
+//_________________________________________________________________________________________
+//Miscelanious classes
+.bold{font-weight: 500;}
+
+.textaligncenter{text-align: center;}
+
+.textalignleft{text-align: left;}
+
+.notextdecoration{text-decoration: none;}
+
+.underline{text-decoration: underline;}
+
+.stylessList{
+  list-style-type: none;  
+}/*Removes all list styling including bullets*/
+
+.imgone{/*imaage style 1*/
+  width: 22em;
+  height:auto;
+  padding-top: 2.1em;
+}
+
+.body{
+  background-color: #FFFFF0;
+  min-height: 100vh;
+  display: flex;
+  flex-direction: column;}
+
+.searchButton{
+  width: 35%;
+  height: 8%;
+  padding-top:0.7em;
+}

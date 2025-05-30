@@ -8,9 +8,7 @@
         
         <link rel="stylesheet" href="./css/styles.css"/><!--connects to style.css-->
         <script src="https://kit.fontawesome.com/407fb50441.js" crossorigin="anonymous"></script><!--links to the font awsome kit(for icons)-->
-        <link 
-        href="https://cdn.jsdelivr.net/npm/bootstrap@5.2.0/dist/css/bootstrap.min.css"
-        rel="stylesheet"><!--imports bootstrap-->
+
 
         <link rel="preconnect" href="https://fonts.googleapis.com"><!--links to google fonts-->
         <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
@@ -18,7 +16,7 @@
     </head>
     <body class="body" id="show">
         <nav class="navbar navbar-expand backgroundblue"><!--creates a navigational bar-->
-            <a class="navbar-brand importantwhite minFontSize lato-regular" href="index.html">Sheppard TV catalogue</a>
+            <a class="navbar-brand importantwhite minFontSizeLogo lato-regular" href="index.html">Sheppard TV catalogue</a>
             <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNAV" aria-controls="navbarNAV" aria-expanded="false" aria-label="Toggle navigation"><!--makes the navbar responsive for mobile users-->
                 <span class="navbar-toggle-icon"></span>
             </button>
@@ -52,12 +50,27 @@
                     </ul>
                 </div>
                 <div class="col-lg-8">
-                    <ul id="showInfo" class="colorred bold textfive textalignleft"></ul><!--show.js sends the episode info to this-->
+                    <ul id="showInfo" class="colorred bold textalignleft"></ul><!--show.js sends the episode info to this-->
                 </div>
             </div>
         </div>
         <div class="container">
-            <ul id="episodes" class="colorred bold textfive textalignleft"></ul><!--show.js sends episode name weblinks image to this-->
+            <details aria-expanded="false" aria-controls="showDesc">
+		        <summary class="colorred bold summary roboto-regular">Show description:</summary>
+		        <div id="showDesc" class="row mt-4"></div><!--show.js sends cast image to this-->
+	        </details>
+        </div>
+        <div class="container">
+            <details aria-expanded="false" aria-controls="episodes">
+                <summary class="colorred bold summary roboto-regular">Episodes:</summary>
+                <div id="episodes" class="row mt-4 minFontSize"></div><!--show.js sends episode name weblinks image to this-->
+            </details>
+        </div>
+        <div class="container">
+            <details aria-expanded="false" aria-controls="cast">
+                <summary class="colorred bold summary roboto-regular">Cast:</summary>
+                <div id="cast" class="row mt-4 minFontSize"></div><!--show.js sends cast image to this-->
+            </details>
         </div>
         <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.2.0/dist/js/bootstrap.bundle.min.js"></script><!--imports bootstrap for javascript-->
         <script src="./js/show.js"></script>

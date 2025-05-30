@@ -4,13 +4,10 @@
         <meta name="viewpoint" content="width=device-width, initial-scale=1, maximum-scale=1.0, user-scalable=no"><!--Prevents webcontent being shrunk to fit smaller screens-->
         <meta charset="utf-8"/><!--Sets the charecterset to utf-8-->
         <meta name=" description" content= "An expansive TV show catalouge; browse now." >
-        <title">Home - Sheppard TV catalogue</title>
+        <title>Home - Sheppard TV catalogue</title>
         
         <link rel="stylesheet" href="./css/styles.css"/><!--connects to style.css-->
         <script src="https://kit.fontawesome.com/407fb50441.js" crossorigin="anonymous"></script><!--links to the font awsome kit(for icons)-->
-        <link 
-        href="https://cdn.jsdelivr.net/npm/bootstrap@5.2.0/dist/css/bootstrap.min.css"
-        rel="stylesheet"><!--imports bootstrap-->
 
         <link rel="preconnect" href="https://fonts.googleapis.com"><!--links to google fonts-->
         <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
@@ -18,7 +15,7 @@
     </head>
     <body class="body homePageBody" id="home-page">
         <nav class="navbar navbar-expand backgroundblue"><!--creates a navigational bar-->
-            <a class="navbar-brand importantwhite minFontSize lato-regular" href="index.html">Sheppard TV catalogue</a>
+            <a class="navbar-brand importantwhite minFontSizeLogo lato-regular" href="index.html">Sheppard TV catalogue</a>
             <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNAV" aria-controls="navbarNAV" aria-expanded="false" aria-label="Toggle navigation"><!--makes the navbar responsive for mobile users-->
                 <span class="navbar-toggle-icon"></span>
             </button>
@@ -42,9 +39,9 @@
             </ol>
         </nav>
         
-        <div class="container"><!--Creates a jumbotron and adds text-->
+        <div class="container banana"><!--Creates a jumbotron and adds text-->
             <div class="p-5 mb-4 bg-light jumbotron jumbotronone">
-                <h1 class="display-5 fw-bold colorred bold minFontSize roboto-regular">Sheppard TV catalogue</h1>
+                <h1 class="display-5 fw-bold colorred bold minFontSizeH1 roboto-regular">Sheppard TV catalogue</h1>
                 <p class="col-md-8 fs-4 coloryellow minFontSize roboto-regular">
                     &nbsp&nbsp The best way to find your favourite tv shows!
                     Browse now</p>
@@ -75,12 +72,12 @@
                 </div>
             </div>
         </div>
-        <p class="bold textaligncenter textsix minFontSize roboto-regular">Find information about your favourite TV shows, episodes and actors, all in one place</p>
+        <p  id="botomPara" class="bold textaligncenter minFontSize roboto-regular">Find information about your favourite TV shows, episodes and actors, all in one place</p>
         <footer class="footer backgroundblue">
-            <a href="https://www.tvmaze.com/api" class="notextdecoration">
+            <a target="TVMaze API" href="https://www.tvmaze.com/api" class="notextdecoration">
                 <p class="bold textaligncenter coloryellow minFontSize roboto-regular">Information sourced from https://www.tvmaze.com/api</p>
             </a>
         </footer>
-        <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.2.0/dist/js/bootstrap.bundle.min.js"></script><!--imports bootstrap for javascript-->
+        <script src="./node_modules/bootstrap/dist/js/bootstrap.bundle.min.js"></script><!--links to bootstrap for javascript-->
     </body>
 </html>

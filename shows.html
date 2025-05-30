@@ -8,9 +8,6 @@
         
         <link rel="stylesheet" href="./css/styles.css"/><!--connects to style.css-->
         <script src="https://kit.fontawesome.com/407fb50441.js" crossorigin="anonymous"></script><!--links to the font awsome kit(for icons)-->
-        <link 
-        href="https://cdn.jsdelivr.net/npm/bootstrap@5.2.0/dist/css/bootstrap.min.css"
-        rel="stylesheet"><!--imports bootstrap-->
 
         <link rel="preconnect" href="https://fonts.googleapis.com"><!--links to google fonts-->
         <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
@@ -18,7 +15,7 @@
     </head>
     <body class="body" id="show-search">
         <nav class="navbar navbar-expand backgroundblue"><!--creates a navigational bar-->
-            <a class="navbar-brand importantwhite minFontSize lato-regular" href="index.html">Sheppard TV catalogue</a>
+            <a class="navbar-brand importantwhite minFontSizeLogo lato-regular" href="index.html">Sheppard TV catalogue</a>
             <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNAV" aria-controls="navbarNAV" aria-expanded="false" aria-label="Toggle navigation"><!--makes the navbar responsive for mobile users-->
                 <span class="navbar-toggle-icon"></span>
             </button>
@@ -45,14 +42,17 @@
         <div class="container">
             <h1 class="colorred underline minFontSizeH1 roboto-regular">TV show search</h1>
             <p class="bold searchbarlabel minFontSize roboto-regular">Search for a TV show to get started!</p>
-            <form class="formone"><!--Creates the searchbar-->
+            <form class="searchBar" onsubmit="showSearch(event)"><!--Creates the searchbar-->
                 <div class="row topspaceone">
-                <input type="text" name="showName" /><!--Takes text input from the user-->
+                    <input type="text" aria-label="show search field" name="showName" placeholder="Search for shows"/><!--Takes text input from the user-->
+                </div>
+                <div class="row searchButton">
+                    <button type="submit" class="btn btn-primary mb-2 coloryellow">Search</button>
                 </div>
             </form>
         </div>
         <div class="container">
-            <ul id="showResults" class="mt-4 colorblue"></ul><!--shows.js sends showname weblinks in the form of list elements to this list-->
+               <ul id="showResults" class="row mt-4"></ul><!--shows.js sends bootcards to this-->
         </div>
         <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.2.0/dist/js/bootstrap.bundle.min.js"></script><!--imports bootstrap for javascript-->
         <script src="./js/shows.js"></script>
